@@ -13,5 +13,5 @@ jobs:
       uses: whoan/docker-build-with-cache-action@v2
       with:
         username: soichisumi
-        password: dummy
-        image_name: soichisumi/slack-janken
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        image_name: soichisumi0/slack-janken
